@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>App Store - DeFi Category</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0c1a26;
+      color: white;
+      display: flex;
+    }
+
+    .sidebar {
+      width: 25%;
+      background-color: #0c1a26;
+      color: #ffffff;
+      padding: 30px;
+      box-sizing: border-box;
+      border-right: 1px solid #1f2937;
+      min-height: 100vh;
+      
+    }
+
+    .sidebar h2 {
+      margin: 0;
+      font-size: 16px;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+
+    .search-bar {
+      margin: 20px 0;
+      border: 1px solid gray;
+    }
+
+    .search-bar input {
+      width: 70%;
+      padding: 8px;
+      border-radius: 4px solid black;
+      border: none;
+      background-color: #0c1a26;
+      color: #ffffff;
+      font-size: 12px;
+    }
+
+    .nav-link {
+      padding: 10px 5px;
+      color: #c9d1d9;
+      font-size: 13px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .nav-link:hover {
+      background-color: #21262d;
+      color: #ffffff;
+    }
+
+    .main-content {
+      width: 80%;
+      padding: 0;
+    }
+
+    /* Keep your existing styles below this comment */
+    .top-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #152c3a;
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+    .top-banner .red {
+      color: #ff3e3e;
+    }
+    .top-banner .blue {
+      color: #00ffcc;
+    }
+    .top-banner .logo {
+      height: 30px;
+    }
+
+    .navbar {
+      background: #132634;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 25px;
+      align-items: center;
+    }
+    .navbar h2 {
+      margin: 0;
+      font-size: 20px;
+    }
+    .nav-buttons button,
+    .nav-right button {
+      background: #1d3a4e;
+      border: none;
+      padding: 8px 14px;
+      color: #fff;
+      border-radius: 4px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .category-header {
+      padding: 20px 25px;
+    }
+    .filters button {
+      background: #1d3a4e;
+      border: none;
+      padding: 6px 12px;
+      margin: 5px;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .filters .green {
+      background-color: #00cc99;
+    }
+
+    .app-card, .detailed-card, .card-grid, .detailed-card-grid, .site-footer {
+      padding: 20px 25px;
+    }
+
+    .apps{
+      font-size: x-large !important;
+    }
+
+    /* Other components should follow your existing layout styles */
+
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2 class="apps">APP STORE</h2>
+    <div class="search-bar">
+      <input type="text" placeholder="Search apps and games" />
+    </div>
+    <div class="nav-link">🏠 Home</div>
+    <div class="nav-link">📂Categories</div>
+    <div class="nav-link">💬 Message</div>
+    <div class="nav-link">🎮 Recently Played</div>
+    <div class="nav-link">👤 Account</div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Top Banner -->
+    <div class="top-banner">
+      <span>Play <span class="red">God of War</span> and earn exclusive prizes – <span class="blue">Play Now</span></span>
+      <img src="gow.webp" class="logo" />
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <div class="nav-left">
+        
+        <div class="nav-buttons">
+          <button>Games</button>
+          <button>Apps</button>
+          <button>P2E</button>
+          <button>Contact</button>
+        </div>
+      </div>
+      <div class="nav-right">
+        <button class="sign-in">Sign In</button>
+        <button class="sign-up">Sign Up</button>
+      </div>
+    </div>
+
+  <!-- DeFi Header -->
+  <div class="category-header">
+    <h2>DeFi Category</h2>
+    <div class="filters">
+      <button class="green">DEXTR Verified</button>
+      <button>Trending</button>
+      <button>Top Rated</button>
+      <button>NFT Pool</button>
+      <button>Top Searched</button>
+      <button>Ratings ▾</button>
+      <button>People Visited ▾</button>
+      <button>Latest ▾</button>
+    </div>
+  </div>
+
+  <!-- App Card -->
+  <div class="app-card">
+    <img src="unicorn.webp" class="app-icon" />
+    <div class="app-content">
+      <h3>1Inch</h3>
+      <p class="desc">Sidus Heroes is a pioneering, Web3, space-based gaming metaverse with epic lore</p>
+      <p class="tags">DEFI • WALLET</p>
+      <p class="rating">⭐⭐⭐⭐ - <span class="orange">4.3 Ratings</span> | <span class="pink">369 Reviews</span></p>
+    </div>
+    <div class="badges">
+      <span class="green-badge">✔ DEXTR Verified</span>
+      <span class="purple-badge">400 People Visited</span>
+      <span class="red-badge">NFT Pool</span>
+    </div>
+    <div class="card-buttons">
+      <button class="explore">EXPLORE</button><br>
+      <button class="visit-site">VISIT SITE</button>
+    </div>
+  </div>
+
+  <div class="app-card">
+    <img src="binance.png" class="app-icon" />
+    <div class="app-content">
+      <h3>Binance</h3>
+      <p class="desc">Sidus Heroes is a pioneering, Web3, space-based gaming metaverse with epic lore</p>
+      <p class="tags">DEFI • WALLET</p>
+      <p class="rating">⭐⭐⭐⭐⭐ - <span class="orange">4.8 Ratings</span> | <span class="pink">369 Reviews</span></p>
+    </div>
+    <div class="badges">
+      <span class="green-badge">✔ DEXTR Verified</span>
+      <span class="purple-badge">400 People Visited</span>
+      <span class="red-badge">NFT Pool</span>
+    </div>
+    <div class="card-buttons">
+      <button class="explore">EXPLORE</button><br>
+      <button class="visit-site">VISIT SITE</button>
+    </div>
+  </div>
+
+  <div class="app-card">
+    <img src="aqua.jpg" class="app-icon" />
+    <div class="app-content">
+      <h3>Aqua Protocol</h3>
+      <p class="desc">Sidus Heroes is a pioneering, Web3, space-based gaming metaverse with epic lore</p>
+      <p class="tags">DEFI • WALLET</p>
+      <p class="rating">⭐⭐⭐⭐⭐ - <span class="orange">4.8 Ratings</span> | <span class="pink">369 Reviews</span></p>
+    </div>
+    <div class="badges">
+      <span class="green-badge">✔ DEXTR Verified</span>
+      <span class="purple-badge">400 People Visited</span>
+      <span class="red-badge">NFT Pool</span>
+    </div>
+    <div class="card-buttons">
+      <button class="explore">EXPLORE</button><br>
+      <button class="visit-site">VISIT SITE</button>
+    </div>
+  </div>
+
+  <!-- More App Cards Grid -->
+   <!-- make image to the left side and content right side adjust accordingly till card 4 only -->
+<div class="card-grid">
+    <!-- Card 1 -->
+    <div class="app-card small">
+      <img src="binance.png" class="app-icon" />
+      <div class="app-content">
+        <h3 class="brand-name">Houndrace</h3>
+        <p class="desc">Sidus Heroes is a pioneering, Web3, space-based gaming.</p>
+        <p class="rating">⭐⭐⭐⭐⭐ - <span class="orange">4.8 Ratings</span> | <span class="pink">369 Reviews</span></p>
+      </div>
+      <span class="tag-badge trending">🔥 Trending</span>
+      <div class="card-buttons">
+        <button class="explore">EXPLORE</button>
+        <button class="visit-site">VISIT SITE</button>
+      </div>
+    </div>
+  
+    <!-- Card 2 -->
+    <div class="app-card small">
+      <img src="pancake.jpg" class="app-icon" />
+      <div class="app-content">
+        <h3 class="brand-name pink-name">Pancake Swap</h3>
+        <p class="desc">Sidus Heroes is a pioneering, Web3, space-based gaming.</p>
+        <p class="rating">⭐⭐⭐⭐⭐ - <span class="orange">4.8 Ratings</span> | <span class="pink">369 Reviews</span></p>
+      </div>
+      <span class="tag-badge trending">🔥 Trending</span>
+      <div class="card-buttons">
+        <button class="explore">EXPLORE</button>
+        <button class="visit-site">VISIT SITE</button>
+      </div>
+    </div>
+  
+    <!-- Card 3 -->
+    <div class="app-card small">
+      <img src="binance.png" class="app-icon" />
+      <div class="app-content">
+        <h3 class="brand-name">Henlo</h3>
+        <p class="desc">Sidus Heroes is a pioneering, Web3, space-based gaming.</p>
+        <p class="rating">⭐⭐⭐⭐⭐ - <span class="orange">4.8 Ratings</span> | <span class="pink">369 Reviews</span></p>
+      </div>
+      <span class="tag-badge top-search">🔍 Top Search</span>
+      <div class="card-buttons">
+        <button class="explore">EXPLORE</button>
+        <button class="visit-site">VISIT SITE</button>
+      </div>
+    </div>
+  
+    <!-- Card 4 -->
+    <div class="app-card small">
+      <img src="binance.png" class="app-icon" />
+      <div class="app-content">
+        <h3 class="brand-name">Sidus Heroes</h3>
+        <p class="desc">Sidus Heroes is a pioneering, Web3, space-based gaming.</p>
+        <p class="rating">⭐⭐⭐⭐⭐ - <span class="orange">4.8 Ratings</span> | <span class="pink">369 Reviews</span></p>
+      </div>
+      <span class="tag-badge top-search">🔍 Top Search</span>
+      <div class="card-buttons">
+        <button class="explore">EXPLORE</button>
+        <button class="visit-site">VISIT SITE</button>
+      </div>
+    </div>
+  
+  </div>
+
+  <!-- New Detailed App Section -->
+<div class="detailed-card-grid">
+
+    <!-- Aave (Wide) -->
+    <div class="detailed-card large">
+      <img src="binance.png" alt="Aave Logo" class="large-logo" />
+      <div class="card-body">
+        <h3>Aave</h3>
+        <p class="sub-label">DEFI · WALLET</p>
+        <p class="desc">Open-source non-custodial liquidity protocol.</p>
+        <p class="rating">⭐⭐⭐⭐⭐ - <span class="orange">4.8 Ratings</span> | <span class="pink">369 Reviews</span></p>
+        <div class="badges">
+          <span class="tag verified">Verified App</span>
+          <span class="tag trusted">Trusted App</span>
+        </div>
+        <br>
+        <button class="explore full">Explore</button>
+      </div>
+      
+    </div>
+  
+    <!-- Card Template -->
+    <div class="detailed-card">
+      <img src="saros.jpg" alt="Sidus Logo" class="icon" />
+      <div class="card-body">
+        <h3>Sidus Heroes</h3>
+        <p class="sub-label">DEFI · WALLET</p>
+        <p class="desc">Open-source non-custodial liquidity protocol.</p>
+        <p class="rating">⭐⭐⭐⭐⭐ - <span class="orange">4.8 Ratings</span> | <span class="pink">369 Reviews</span></p>
+        <div class="badges badge">
+          <span class="tag verified">Verified App</span>
+          <span class="tag trusted">Trusted App</span>
+        </div>
+        <br><br>
+        <button class="explore">Explore</button>
+      </div>
+    </div>
+  
+    <div class="detailed-card">
+      <img src="pancake.jpg" alt="Pancake Logo" class="icon" />
+      <div class="card-body">
+        <h3>PancakeSwap</h3>
+        <p class="sub-label">DEFI · WALLET</p>
+        <p class="desc">Open-source non-custodial liquidity protocol.</p>
+        <p class="rating">⭐⭐⭐⭐ - <span class="orange">3.8 Ratings</span> | <span class="pink">369 Reviews</span></p>
+        <div class="badges badge">
+          <span class="tag verified">Verified App</span>
+          <span class="tag trusted">Trusted App</span>
+        </div>
+        <br><br>
+        <button class="explore">Explore</button>
+      </div>
+    </div>
+  
+    <div class="detailed-card">
+      <img src="aqua.jpg" alt="Aqua Protocol Logo" class="icon" />
+      <div class="card-body">
+        <h3>Aqua Protocol</h3>
+        <p class="sub-label">DEFI · WALLET</p>
+        <p class="desc">Open-source non-custodial liquidity protocol.</p>
+        <p class="rating">⭐⭐⭐⭐⭐ - <span class="orange">4.8 Ratings</span> | <span class="pink">369 Reviews</span></p>
+        <div class="badges badge">
+          <span class="tag verified">Verified App</span>
+          <span class="tag trusted">Trusted App</span>
+        </div>
+        <br><br>
+        <button class="explore">Explore</button>
+      </div>
+    </div>
+  
+    <div class="detailed-card">
+      <img src="binance.png" alt="Houndrace Logo" class="icon" />
+      <div class="card-body">
+        <h3>Houndrace</h3>
+        <p class="sub-label">DEFI · WALLET</p>
+        <p class="desc">Open-source non-custodial liquidity protocol.</p>
+        <p class="rating">⭐⭐⭐⭐⭐ - <span class="orange">4.8 Ratings</span> | <span class="pink">369 Reviews</span></p>
+        <div class="badges badge">
+          <span class="tag verified">Verified App</span>
+          <span class="tag trusted">Trusted App</span>
+        </div>
+       <br><br>
+        <button class="explore">Explore</button>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- footer -->
+
+  <div class="social-banner">
+    <span>Get Connected with us on Social Media</span>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+    </div>
+  </div>
+
+
+
+  
+  <footer class="site-footer">
+    <!-- Social Bar -->
+    
+    <!-- Main Footer Content -->
+    <div class="footer-content">
+      <div class="footer-col company">
+        <h3>Company Name</h3>
+        <p>
+          Dextr Apps is a Web3 app store featuring web-based apps and games where users can earn rewards. 
+          No downloads required—just explore, play, and engage with blockchain-powered applications directly from your browser.
+        </p>
+      </div>
+  
+      <!-- Repeat 3 identical Pages columns -->
+      <div class="footer-col">
+        <h3>Pages</h3>
+        <ul>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Apps</a></li>
+          <li><a href="#">play 2 Earn</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-col">
+        <h3>Pages</h3>
+        <ul>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Apps</a></li>
+          <li><a href="#">play 2 Earn</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-col">
+        <h3>Pages</h3>
+        <ul>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Apps</a></li>
+          <li><a href="#">play 2 Earn</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    
+  </footer>
+  
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>
+      All Rights Reserved 2025-26 © Copyright - Dextr Apps |
+      <a href="#">Privacy</a> |
+      <a href="#">Disclaimer</a> |
+      <a href="#">Terms & Conditions</a>
+    </p>
+  </div>
+
+  </div>
+
+</body>
+</html>
